@@ -342,6 +342,12 @@ OPTIONAL_APPS = (
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
+#######################
+# HEROKU ENV SETTINGS #
+#######################
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+NEVERCACHE_KEY = os.environ.get('NEVERCACHE_KEY', '')
 
 ##################
 # LOCAL SETTINGS #
